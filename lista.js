@@ -5,15 +5,19 @@ function getLista()
     return lista;
 }
 
-function limparLista()
+function limpaLista()
 {
     lista.splice(0);
-    
 }
 
-export function adicionarNaLista(novoItem)
+export function removeDaLista(x)
 {
-    lista.push(novoItem)
+    lista.splice(x, 1);
 }
 
-export{getLista, limparLista};
+export function adicionaNaLista(novoItem)
+{
+    lista.push(novoItem);
+}
+
+export{getLista, limpaLista};
